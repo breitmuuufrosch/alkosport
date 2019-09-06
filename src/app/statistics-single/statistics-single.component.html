@@ -1,0 +1,12 @@
+<div class="info">
+  <mat-form-field>
+    <mat-label>Benutzer</mat-label>
+    <mat-select (selectionChange)="userChanged($event);" [(value)]="selectedUser">
+      <mat-option *ngFor="let user of users" [value]="user.id">
+        {{user.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <app-vs-counter [showBig]="true" [countA]="total[1]" [countS]="total[2]"></app-vs-counter>
+</div>

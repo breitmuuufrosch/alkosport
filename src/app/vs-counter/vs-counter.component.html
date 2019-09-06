@@ -1,0 +1,28 @@
+<div [hidden]="showBig" class="small {{textClass}}">
+  <span class="activity glass-cheers">
+    <fa-icon icon="glass-cheers" [size]="size"></fa-icon>
+  </span>
+  <span class="statistics">&nbsp;{{countA}}</span>
+
+  <span class="statistics">&nbsp;vs&nbsp;</span>
+
+  <span class="statistics">{{countS}}&nbsp;</span>
+  <span class="activity running">
+    <fa-icon icon="running" [size]="size"></fa-icon>
+  </span>
+</div>
+<div [hidden]="!showBig" class="big">
+  <div class="center">
+    <div class="activity glass-cheers">
+      <fa-icon icon="glass-cheers" size="5x"></fa-icon>
+      <div class="floating statistics">&nbsp;{{countA}}</div>
+    </div>
+
+    <div class="statistics">vs</div>
+
+    <div class="activity running">
+      <fa-icon icon="running" size="5x"></fa-icon>
+      <div class="floating statistics">&nbsp;{{countS}}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+.big {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .activity {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .floating {
+    float: right;
+  }
+
+  .running {
+    color: #1b2f48;
+  }
+
+  .glass-cheers {
+    color: #821d2f;
+  }
+
+  .statistics {
+    font-size: 60px;
+  }
+}
+
+.small {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .running {
+    color: #1b2f48;
+  }
+
+  .glass-cheers {
+    color: #821d2f;
+  }
+
+  .statistics {
+    font-size: 28px;
+  }
+
+  &.small-font .statistics {
+    font-size: 16px;
+  }
+}

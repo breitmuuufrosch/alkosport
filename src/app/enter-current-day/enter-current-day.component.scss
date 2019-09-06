@@ -1,0 +1,78 @@
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.btn-alcohol {
+  position: absolute;
+  //top: 31vh;
+  //left: 5vw;
+
+  top:  50%;
+  left: 50%;
+  transform: translate(-100%,-50%);
+}
+
+.alcohol {
+  color: #821d2f;
+}
+
+.btn-sport {
+  position: absolute;
+  //top: 55vh;
+  //right: 10vw;
+
+  top:  50%;
+  left: 50%;
+  transform: translate(20%,50%);
+}
+
+.sport {
+  color: #1b2f48;
+}
+
+.box {
+  height: 100vw;
+  max-height: 360px;
+  max-width: 360px;
+  margin: auto;
+}
+
+.box:after {
+  content: ' ';
+  border-top: 100vw solid rgba(130, 29, 47, 0.5);
+  border-right: 100vw solid rgba(27, 47, 72, 0.5);
+  border-top: 360px solid rgba(130, 29, 47, 0.5);
+  border-right: 360px solid rgba(27, 47, 72, 0.5);
+  width: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.date-alcohol {
+  background: rgba(130, 29, 47, 0.5);
+  border-radius: 100%;
+}
+.date-sport {
+  background: rgba(27, 47, 72, 0.5);
+  border-radius: 100%;
+}
+.date-both {
+  background: rgba(255, 156, 0, 0.5);
+  border-radius: 100%;
+}

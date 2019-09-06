@@ -1,0 +1,31 @@
+<span class="container first">
+  <app-vs-counter [showBig]="false" [countA]="total[1]" [countS]="total[2]"></app-vs-counter>
+</span>
+
+<div class="container">
+  <div style="flex: .95;">
+    <h2 class="text-center">Gesamt</h2>
+    <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [colors]="pieChartColors"
+            [plugins]="pieChartPlugins"
+            height="400"></canvas>
+  </div>
+</div>
+
+<div class="container">
+  <div style="flex: 0.95;">
+    <h2 class="text-center">Pro Tag</h2>
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            height="400"></canvas>
+  </div>
+</div>
