@@ -30,13 +30,13 @@ export class StatisticsAllComponent implements OnInit {
       },
     },
     plugins: {
-      datalabels: {
-        formatter: (value, ctx) => {
-          // const label = ctx.chart.data.labels[ctx.dataIndex];
-          // return label;
-          return '';
-        },
-      },
+      // datalabels: {
+      //   formatter: (value, ctx) => {
+      //     // const label = ctx.chart.data.labels[ctx.dataIndex];
+      //     // return label;
+      //     return '';
+      //   },
+      // },
     }
   };
   public pieChartColors = [{
