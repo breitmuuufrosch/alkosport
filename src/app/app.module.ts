@@ -5,13 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/material/snack-bar';
-import {MAT_DATE_LOCALE} from '@angular/material';
+import {DateAdapter, MAT_DATE_LOCALE} from '@angular/material';
 
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faGlassCheers, faUser, faUsers, faRunning} from '@fortawesome/free-solid-svg-icons';
 
 import {AppComponent} from './app.component';
+import {CustomDateAdapter} from './services/custom-date-adapter';
 import {EnterCurrentDayComponent} from './enter-current-day/enter-current-day.component';
 import {StatisticsSingleComponent} from './statistics-single/statistics-single.component';
 import {StatisticsAllComponent} from './statistics-all/statistics-all.component';
@@ -38,6 +39,7 @@ import {ChartsModule} from 'ng2-charts';
   providers: [
     {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}},
     {provide: MAT_DATE_LOCALE, useValue: 'de-CH'},
+    { provide: DateAdapter, useClass: CustomDateAdapter },
     CookieService
   ],
   bootstrap: [AppComponent]
